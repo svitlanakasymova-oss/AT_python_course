@@ -13,7 +13,6 @@
 
 
 class Rhombus:
-    pass
     #side_a - float
     #angle_a - float
     #angle_b - float
