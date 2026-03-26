@@ -1,0 +1,1 @@
+from lesson_16.randominfo_master import Person
