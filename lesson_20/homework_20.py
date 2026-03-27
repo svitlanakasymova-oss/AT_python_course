@@ -20,7 +20,7 @@ def establish_connection():
 def basic_products_desc(connection):
     cursor = connection.cursor()
     cursor.execute("""select p.id, p."name" as Product, c."name" as Category, p.price from products p
-    join categories c on p.category_id = c.id;""")
+                    join categories c on p.category_id = c.id;""")
     data = cursor.fetchall()
     for record in data:
         print(record)
@@ -30,9 +30,9 @@ def basic_products_desc(connection):
 def get_out_of_stock_products(connection):
     cursor = connection.cursor()
     cursor.execute("""select p.id, p."name" as Product, c."name" as Category, s.quantity from products p
-join categories c on p.category_id = c.id 
-left join stock s on p.id = s.product_id
-where s.quantity is null """)
+                    join categories c on p.category_id = c.id 
+                    left join stock s on p.id = s.product_id
+                    where s.quantity is null """)
     data = cursor.fetchall()
     for record in data:
         print(record)
