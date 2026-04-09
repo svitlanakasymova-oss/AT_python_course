@@ -4,7 +4,7 @@ import logging
 logging.basicConfig(
             filename='json_Kasymova.log',
             level=logging.ERROR,
-            format='%(asctime)s - %(message)s'
+            format='%(asctime)s: %(message)s'
         )
 logger = logging.getLogger("log_event")
 
