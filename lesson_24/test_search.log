@@ -1,0 +1,70 @@
+2026-04-14 20:02:27,628 - INFO - Login successful: 200
+2026-04-14 20:02:27,629 - INFO - Request: sort_by=brand, limit=1
+2026-04-14 20:02:27,635 - INFO - Response is list: OK
+2026-04-14 20:02:27,635 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,635 - INFO - List is correctly sorted
+2026-04-14 20:02:27,639 - INFO - Login successful: 200
+2026-04-14 20:02:27,640 - INFO - Request: sort_by=year, limit=2
+2026-04-14 20:02:27,643 - INFO - Response is list: OK
+2026-04-14 20:02:27,643 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,643 - INFO - List is correctly sorted
+2026-04-14 20:02:27,646 - INFO - Login successful: 200
+2026-04-14 20:02:27,646 - INFO - Request: sort_by=engine_volume, limit=3
+2026-04-14 20:02:27,648 - INFO - Response is list: OK
+2026-04-14 20:02:27,648 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,648 - INFO - List is correctly sorted
+2026-04-14 20:02:27,651 - INFO - Login successful: 200
+2026-04-14 20:02:27,651 - INFO - Request: sort_by=price, limit=5
+2026-04-14 20:02:27,653 - INFO - Response is list: OK
+2026-04-14 20:02:27,653 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,653 - INFO - List is correctly sorted
+2026-04-14 20:02:27,656 - INFO - Login successful: 200
+2026-04-14 20:02:27,657 - INFO - Request: sort_by=price, limit=2
+2026-04-14 20:02:27,658 - INFO - Response is list: OK
+2026-04-14 20:02:27,658 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,658 - INFO - List is correctly sorted
+2026-04-14 20:02:27,661 - INFO - Login successful: 200
+2026-04-14 20:02:27,661 - INFO - Request: sort_by=engine_volume, limit=3
+2026-04-14 20:02:27,663 - INFO - Response is list: OK
+2026-04-14 20:02:27,663 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,663 - INFO - List is correctly sorted
+2026-04-14 20:02:27,665 - INFO - Login successful: 200
+2026-04-14 20:02:27,666 - INFO - Request: sort_by=engine_volume, limit=1
+2026-04-14 20:02:27,668 - INFO - Response is list: OK
+2026-04-14 20:02:27,668 - INFO - Length of list equal to limit
+2026-04-14 20:02:27,668 - INFO - List is correctly sorted
+2026-04-14 20:03:27,817 - INFO - Login successful: 200
+2026-04-14 20:03:27,818 - INFO - Request: sort_by=brand, limit=1
+2026-04-14 20:03:27,821 - INFO - Response is list: OK
+2026-04-14 20:03:27,821 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,821 - INFO - List is correctly sorted
+2026-04-14 20:03:27,824 - INFO - Login successful: 200
+2026-04-14 20:03:27,824 - INFO - Request: sort_by=year, limit=2
+2026-04-14 20:03:27,826 - INFO - Response is list: OK
+2026-04-14 20:03:27,826 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,826 - INFO - List is correctly sorted
+2026-04-14 20:03:27,828 - INFO - Login successful: 200
+2026-04-14 20:03:27,829 - INFO - Request: sort_by=engine_volume, limit=3
+2026-04-14 20:03:27,831 - INFO - Response is list: OK
+2026-04-14 20:03:27,831 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,831 - INFO - List is correctly sorted
+2026-04-14 20:03:27,834 - INFO - Login successful: 200
+2026-04-14 20:03:27,834 - INFO - Request: sort_by=price, limit=5
+2026-04-14 20:03:27,836 - INFO - Response is list: OK
+2026-04-14 20:03:27,836 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,836 - INFO - List is correctly sorted
+2026-04-14 20:03:27,838 - INFO - Login successful: 200
+2026-04-14 20:03:27,838 - INFO - Request: sort_by=price, limit=2
+2026-04-14 20:03:27,840 - INFO - Response is list: OK
+2026-04-14 20:03:27,840 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,840 - INFO - List is correctly sorted
+2026-04-14 20:03:27,842 - INFO - Login successful: 200
+2026-04-14 20:03:27,843 - INFO - Request: sort_by=engine_volume, limit=3
+2026-04-14 20:03:27,845 - INFO - Response is list: OK
+2026-04-14 20:03:27,845 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,845 - INFO - List is correctly sorted
+2026-04-14 20:03:27,847 - INFO - Login successful: 200
+2026-04-14 20:03:27,847 - INFO - Request: sort_by=engine_volume, limit=1
+2026-04-14 20:03:27,849 - INFO - Response is list: OK
+2026-04-14 20:03:27,849 - INFO - Length of list equal to limit
+2026-04-14 20:03:27,849 - INFO - List is correctly sorted
