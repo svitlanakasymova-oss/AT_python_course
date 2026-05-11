@@ -1,0 +1,54 @@
+pipeline {
+    agent {
+        docker {
+            image 'python:3.12'
+        }
+    }
+
+    stages {
+        stage('Checkout code') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Install dependencies') {
+            steps {
+                sh '''
+                    python -m pip install --upgrade pip
+                    pip install -r requirements.txt
+                '''
+            }
+        }
+
+        stage('Run tests') {
+            steps {
+                sh '''
+                    mkdir -p reports
+                    pytest tests/ --junitxml=reports/test-results.xml
+                '''
+            }
+        }
+
+        stage('Publish test results') {
+            steps {
+                junit 'reports/test-results.xml'
+            }
+        }
+    }
+
+    post {
+        always {
+            emailext(
+                to: 'InsertYour@Mail.Here',
+                subject: "Jenkins Pipeline Result: ${currentBuild.currentResult}",
+                body: """
+Project: ${env.JOB_NAME}
+Build number: ${env.BUILD_NUMBER}
+Status: ${currentBuild.currentResult}
+Build URL: ${env.BUILD_URL}
+"""
+            )
+        }
+    }
+}
