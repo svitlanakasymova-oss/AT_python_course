@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'python:3.12'
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout code') {
@@ -15,6 +11,9 @@ pipeline {
         stage('Install dependencies') {
             steps {
                 sh '''
+                    cd lesson_29
+                    python3 -m venv venv
+                    . venv/bin/activate
                     python -m pip install --upgrade pip
                     pip install -r requirements.txt
                 '''
@@ -24,31 +23,18 @@ pipeline {
         stage('Run tests') {
             steps {
                 sh '''
+                    cd lesson_29
+                    . venv/bin/activate
                     mkdir -p reports
-                    pytest tests/ --junitxml=reports/test-results.xml
+                    pytest test_trivial.py --junitxml=reports/test-results.xml
                 '''
             }
         }
 
         stage('Publish test results') {
             steps {
-                junit 'reports/test-results.xml'
+                junit 'lesson_29/reports/test-results.xml'
             }
-        }
-    }
-
-    post {
-        always {
-            emailext(
-                to: 'InsertYour@Mail.Here',
-                subject: "Jenkins Pipeline Result: ${currentBuild.currentResult}",
-                body: """
-Project: ${env.JOB_NAME}
-Build number: ${env.BUILD_NUMBER}
-Status: ${currentBuild.currentResult}
-Build URL: ${env.BUILD_URL}
-"""
-            )
         }
     }
 }
